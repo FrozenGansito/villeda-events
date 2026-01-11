@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Villeda Events on HTML 5 and CSS3
+
+        Villeda Events Gallery Page
+
+        Author: Jose Sanchez
+        Date: 12/19/2025
+
+        Filename: ve_gallery.html
+    -->
+
+    <title>Villeda Events | Gallery</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ve_styles3.css">
+    <script src="ve_gallery.js" defer></script>
+</head>
+
+<body>
+    <!--Top Title Header-->
+    <header class="branding"> 
+        <h1 class="site-title">Villeda Events</h1>
+        <img src="gallery/ve_logo1.png" alt="Villeda Events" class="logo"/>
+    </header>
+
+    <section class="main-content">
+        <nav class="vertical">
+            <ul class="mainmenu">
+                <li><a href="ve_home.html">Home</a></li>
+                <li><a href="ve_products.html">Products & Services</a></li>
+                <li><a href="ve_gallery.html">Gallery</a></li>
+                <li><a href="ve_aboutus.html">About Us</a></li>
+            </ul>
+            <img src="gallery/ve_smalllogo.png" alt="" class="desktop-only">
+        </nav>
+
+        <section class="gallery">
+
+            <h1>Gallery</h1>
+            <p>Photos from real events featuring our tables & chairs, events, and custom pinatas.</p>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active" data-filter="all">All</button>
+                <button class="tab" data-filter="tables">Tables & Chairs</button>
+                <button class="tab" data-filter="events">Event Setups</button>
+                <button class="tab" data-filter="pinatas">Pinatas</button>
+            </div>
+
+             <!-- Image Grid -->
+            <div class="gallery-grid">
+
+                <img src="gallery/ve_tables1.jpg" class="gallery-img tables" alt="Tables" onclick="openLightbox(this)">
+                <img src="gallery/ve_tables2.jpg" class="gallery-img tables" alt="Tables" onclick="openLightbox(this)">
+                <img src="gallery/ve_tables3.jpg" class="gallery-img tables" alt="Tables" onclick="openLightbox(this)">
+                <img src="gallery/ve_tables4.jpg" class="gallery-img tables" alt="Tables" onclick="openLightbox(this)">
+
+                <img src="gallery/ve_event1.png" class="gallery-img events" alt="Events" onclick="openLightbox(this)">
+                <img src="gallery/ve_event2.jpg" class="gallery-img events" alt="Events" onclick="openLightbox(this)">
+                <img src="gallery/ve_event3.png" class="gallery-img events" alt="Events" onclick="openLightbox(this)">
+                <img src="gallery/ve_event4.png" class="gallery-img events" alt="Events" onclick="openLightbox(this)">
+                <img src="gallery/ve_event5.jpg" class="gallery-img events" alt="Events" onclick="openLightbox(this)">
+                <img src="gallery/ve_event6.jpg" class="gallery-img events" alt="Events" onclick="openLightbox(this)">
+                <img src="gallery/ve_event7.jpg" class="gallery-img events" alt="Events" onclick="openLightbox(this)">
+
+                <img src="gallery/ve_pinata1.png" class="gallery-img pinatas" alt="Pinatas" onclick="openLightbox(this)">
+                <img src="gallery/ve_pinata2.png" class="gallery-img pinatas" alt="Pinatas" onclick="openLightbox(this)">
+                <img src="gallery/ve_pinata3.png" class="gallery-img pinatas" alt="Pinatas" onclick="openLightbox(this)">
+                <img src="gallery/ve_pinata4.png" class="gallery-img pinatas" alt="Pinatas" onclick="openLightbox(this)">
+                <img src="gallery/ve_pinata5.jpg" class="gallery-img pinatas" alt="Pinatas" onclick="openLightbox(this)">
+                <img src="gallery/ve_pinata6.jpg" class="gallery-img pinatas" alt="Pinatas" onclick="openLightbox(this)">
+                <img src="gallery/ve_pinata7.jpg" class="gallery-img pinatas" alt="Pinatas" onclick="openLightbox(this)">
+
+                <dialog id="lightbox">
+                    <img id="lightbox-img" alt="Enlarged image">
+                    <button class="close-btn" onclick="closeLightbox()">✕</button>
+                </dialog>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <footer>
+        @Villeda Events 2024-2026 | Website by Jose Sanchez
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+@charset "utf-8";
+
+/*
+    Villeda Events About Us Stylesheet
+    Author: Jose Sanchez
+    Date: 12/20/2025
+
+    Filename: ve_styles4.css
+*/
+
+/* Font Family Links */
+.playfair-display-sc-regular {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display-sc-bold {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.playfair-display-sc-black {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.playfair-display-sc-regular-italic {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.playfair-display-sc-bold-italic {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.playfair-display-sc-black-italic {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* HTML and Body Styles */
+html {
+    background-color: #fff3e8;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1324px;
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display SC', serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*Title and Logo*/
+.branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*pushes title left, logo right*/
+    border: 10px double rgb(90, 60, 40);
+    box-sizing: border-box;
+}
+
+.site-title {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-left: 20px;
+    font-size: clamp(2rem, 7vw, 5rem);
+    font-weight: 600;
+    color: rgb(56, 37, 25);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /*prevents overflow instead of breaking layout*/
+}
+
+.logo {
+    flex: 0 1 150px; /*allow shrinking*/
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/*Vertical Navigation Styles*/
+
+nav.vertical {
+    background-color: rgb(90, 60, 40);
+    display: flex;
+    width: 150px;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+/*Main Menu Styles*/
+
+.mainmenu { /*Stack menu items vertically*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-transform: uppercase;
+}
+
+.mainmenu li {
+    font-size: 20px;
+}
+
+.mainmenu a {
+    display: block;
+    color: #e2e2e2;
+    text-decoration: none;
+}
+
+.mainmenu a:hover, .mainmenu a:active {
+    color: black;
+}
+
+
+/*Main Article Styles*/
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.right-content h1 {
+    text-align: center;
+}
+
+.right-content h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/*Footer Styles*/
+
+footer {
+    background-color: rgb(90, 60, 40);
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 10px;
+}
+
+
+
+
+/*  ===========================
+    Mobile Styles: 0px to 480px
+    ===========================
+*/
+@media only screen and (max-width: 480px) {
+
+    html {
+        background-image: url(gallery/ve_mobilewp.jpg);
+        background-attachment: fixed;
+        background-position: center 20%;
+        background-size: cover;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .branding {
+        flex-wrap: nowrap; /*forced single row*/
+        background-color: #fff3e8;
+    }
+
+    .site-title {
+        font-size: clamp(1.8rem, 6.5vw, 2.2em);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .logo {
+        width: 70px;
+        max-width: 70px;
+        margin-right: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        font-size: 1.3em;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    nav.vertical {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .mainmenu {
+        gap: 15px;
+    }
+
+    .right-content {
+        width: 100%;
+        padding: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        line-height: 2em;
+        text-align: center;
+    }
+
+    .right-content h1 {
+        margin-top: 50px;
+        font-size: 1.8em;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+}
+
+
+
+
+/*  ===========================
+    Tablet Styles: 481px to 1024px
+    ===========================
+*/
+
+@media only screen and (min-width: 481px) and (max-width:1024px) {
+    html {
+        background-image: url(gallery/ve_tabletbg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    html, body {
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .branding {
+        background-color: #fff3e8;
+    }
+
+    /* Optional: scale title slightly for tablets */
+    .site-title {
+        font-size: clamp(1.9rem, 6.5vw, 4rem);
+    }
+
+    .logo {
+        width: 120px;
+        max-width: 120px;
+        margin-right: 25px;
+    }
+
+    /* Stack branding and nav vertically */
+    .main-content {
+        flex-direction: column;
+        gap: 10px; /* optional spacing */
+        font-size: clamp(1.4em, 2.2vw, 2.5em);
+    }
+
+    /* Nav takes full width on top */
+    nav.vertical {
+        width: 100%;
+        margin: 0;
+        padding: 12px 0;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .mainmenu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .mainmenu a {
+        padding: 10px 14px;
+    }
+
+    /* Main content below nav */
+    .right-content {
+        width: 100%;
+        padding: 15px;
+        line-height: 2em;
+        padding-bottom: 65px;
+    }
+
+    .right-content h1 {
+        margin-top: 50px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+}
+
+
+
+
+/*  ===========================
+    Desktop Styles: 1025px and above
+    ===========================
+*/
+
+@media only screen and (min-width:1025px) {
+    .right-content {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .right-content p {
+        padding: 0px 40px;  
+    }
+
+    .logo {
+        margin-right: 35px;
+    }
+
+    nav.vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        border: 10px double #fff3e8;
+        
+    }
+
+    .desktop-only {
+        display: flex;
+        width: 120px;
+    }
+}
