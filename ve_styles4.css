@@ -152,11 +152,7 @@ nav.vertical {
 
 .right-content h1 {
     text-align: center;
-}
-
-.right-content h2 {
-    margin-top: 20px;
-    text-align: center;
+    font-size: 2.2rem;
 }
 
 
@@ -367,4 +363,5 @@ footer {
         display: flex;
         width: 120px;
     }
+
 }
