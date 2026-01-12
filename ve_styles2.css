@@ -153,6 +153,7 @@ nav.vertical {
 .right-content h1 {
     text-align: center;
     margin-bottom: 50px;
+    font-size: 2rem;
 }
 
 .right-content h2 {
@@ -488,4 +489,5 @@ footer {
     .desktop-only {
         width: 120px;
     }
+
 }
