@@ -140,6 +140,10 @@ nav.vertical {
     padding: 2rem;
 }
 
+.gallery h1 {
+    font-size: 2.2rem;
+}
+
 .gallery h1, .gallery p {
     text-align: center;
 }
@@ -419,4 +423,5 @@ footer {
     .desktop-only {
         width: 120px;
     }
+
 }
