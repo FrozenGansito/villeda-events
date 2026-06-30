@@ -34,11 +34,12 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 body {
     font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
     color: var(--text-body);
     background-color: var(--bg-cream);
     line-height: 1.7;
