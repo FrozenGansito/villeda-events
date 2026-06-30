@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Villeda Events on HTML5 and CSS3
+
+        Villeda Events Custom Pi&ntilde;atas Page v2
+
+        Author: Jose Sanchez
+        Date: 2026
+
+        Filename: ve_pinatas_v2.html
+    -->
+
+    <title>Villeda Events | Custom Pi&ntilde;atas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ve_styles_v2.css">
+    <script src="ve_animate.js" defer></script>
+    <script src="ve_gallery.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="gallery/ve_logo1.png" alt="Villeda Events" class="header-logo">
+                <span class="header-title">Villeda Events</span>
+            </a>
+            <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ve_products_v2.html">Products &amp; Services</a></li>
+                    <li><a href="ve_pinatas_v2.html" class="active">Custom Pi&ntilde;atas</a></li>
+                    <li><a href="ve_gallery_v2.html">Gallery</a></li>
+                    <li><a href="ve_aboutus_v2.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section pinata-hero">
+        <div class="section-header pinata-section-title">
+            <img src="gallery/pinata_logo.png" alt="Custom Pi&ntilde;atas" class="pinata-logo">
+            <h2>Custom Pi&ntilde;atas</h2>
+            <p>Handmade pi&ntilde;atas designed to match your event theme</p>
+        </div>
+        <div class="content-block pinata-intro" style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <p>
+                Every pi&ntilde;ata is <strong>handcrafted with care</strong>, designed to match
+                your colors, style, and celebration theme. Whether it's a birthday,
+                baby shower, holiday, or any special occasion, we create
+                one-of-a-kind pi&ntilde;atas that add a fun and personal touch to your event.
+            </p>
+            <p>
+                We offer <strong>traditional and spinning pi&ntilde;atas</strong> in a variety
+                of shapes and sizes. Have a custom idea? Let us know and we'll bring
+                your vision to life!
+            </p>
+        </div>
+    </section>
+
+    <div class="section-alt">
+        <section class="section">
+            <div class="section-header">
+                <h2>Our Work</h2>
+                <p>Browse some of the pi&ntilde;atas we've created</p>
+            </div>
+            <div class="carousel-wrap">
+                <div class="carousel">
+                    <button class="carousel-btn" onclick="scrollCarousel(this, -1)" aria-label="Previous">&#10094;</button>
+                    <div class="carousel-track">
+                        <img src="gallery/ve_pinata1.png" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata2.png" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata3.png" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata4.png" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata5.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata6.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata7.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata8.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata9.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata10.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata11.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata12.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata13.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata14.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata15.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata16.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata17.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata18.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                        <img src="gallery/ve_pinata19.jpg" class="carousel-img" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+                    </div>
+                    <button class="carousel-btn" onclick="scrollCarousel(this, 1)" aria-label="Next">&#10095;</button>
+                </div>
+                <div class="carousel-counter"><span class="carousel-counter-current">1</span> / <span class="carousel-counter-total">19</span></div>
+            </div>
+
+            <dialog id="lightbox">
+                <div class="lightbox-content">
+                    <img id="lightbox-img" alt="Enlarged image">
+                </div>
+                <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)" aria-label="Previous image">&#10094;</button>
+                <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)" aria-label="Next image">&#10095;</button>
+                <button class="close-btn" onclick="closeLightbox()">&#10005;</button>
+                <div class="lightbox-counter"><span id="lightbox-counter-current">1</span> / <span id="lightbox-counter-total">1</span></div>
+            </dialog>
+        </section>
+    </div>
+
+    <div class="section-alt">
+        <div class="pricing-section">
+            <h2>Pi&ntilde;ata Prices</h2>
+            <p>
+                We make customizable pi&ntilde;atas! Show us a photo, tell us your
+                ideas, give us the theme and we will create it for you!
+            </p>
+
+            <ul class="pricing-list">
+                <li><span>Small (2ft&ndash;2&frac12; ft)</span> <span class="price">$25&ndash;$35</span></li>
+                <li><span>Medium (3ft)</span> <span class="price">$35&ndash;$45</span></li>
+                <li><span>Large (4ft)</span> <span class="price">$50&ndash;$60</span></li>
+                <li><span>XL (5ft)</span> <span class="price">$70&ndash;$80</span></li>
+            </ul>
+
+            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-light);">
+                These prices are not set and will vary depending on what the buyer
+                wants. If you have a special request for a pi&ntilde;ata please ask
+                us and we can create an estimate! Thank you!
+            </p>
+
+            <div class="info-card">
+                <h2>Production Timeline</h2>
+                <p>
+                    Every pi&ntilde;ata is handmade from start to finish, so please plan
+                    ahead! Custom orders typically take <strong>2&ndash;3 weeks</strong> to
+                    complete. We work on <strong>one order at a time</strong>,
+                    so a new order won't begin until the current pi&ntilde;ata is finished.
+                    We recommend reaching out as early as possible to make sure your
+                    pi&ntilde;ata is ready in time for your event.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>Request a Custom Pi&ntilde;ata</h2>
+        </div>
+        <div class="content-block" style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <p>
+                Have a theme or design in mind? Send us an email with your idea,
+                event date, and any inspiration photos. We'll work with you to
+                create the perfect pi&ntilde;ata for your celebration!
+            </p>
+            <p class="bilingual-note">&iexcl;Nosotros hablamos espa&ntilde;ol!</p>
+            <a href="mailto:villedaevents1@gmail.com?Subject=Custom%20Pinata%20Request%20(Website)" class="btn btn-primary btn-center">
+                villedaevents1@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p class="footer-brand">Villeda Events</p>
+        <p>&copy; 2024-2026 | Website by Jose Sanchez</p>
+    </footer>
+</body>
+</html>

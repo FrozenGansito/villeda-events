@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Villeda Events on HTML5 and CSS3
+
+        Villeda Events Gallery Page v2
+
+        Author: Jose Sanchez
+        Date: 2026
+
+        Filename: ve_gallery_v2.html
+    -->
+
+    <title>Villeda Events | Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ve_styles_v2.css">
+    <script src="ve_animate.js" defer></script>
+    <script src="ve_gallery.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="gallery/ve_logo1.png" alt="Villeda Events" class="header-logo">
+                <span class="header-title">Villeda Events</span>
+            </a>
+            <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ve_products_v2.html">Products &amp; Services</a></li>
+                    <li><a href="ve_pinatas_v2.html">Custom Pi&ntilde;atas</a></li>
+                    <li><a href="ve_gallery_v2.html" class="active">Gallery</a></li>
+                    <li><a href="ve_aboutus_v2.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery-section">
+        <h1>Gallery</h1>
+        <p>Photos from real events featuring our tables &amp; chairs, event setups, and custom pi&ntilde;atas.</p>
+
+        <div class="tabs">
+            <button class="tab active" data-filter="all">All</button>
+            <button class="tab" data-filter="tables">Tables &amp; Chairs</button>
+            <button class="tab" data-filter="events">Event Setups</button>
+            <button class="tab" data-filter="pinatas">Pi&ntilde;atas</button>
+        </div>
+
+        <div class="gallery-grid">
+            <img src="gallery/ve_tables1.jpg" class="gallery-img tables" alt="Table setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_tables2.jpg" class="gallery-img tables" alt="Table setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_tables3.jpg" class="gallery-img tables" alt="Table setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_tables4.jpg" class="gallery-img tables" alt="Table setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_tables5.jpg" class="gallery-img tables" alt="Table setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_tables6.jpg" class="gallery-img tables" alt="Table setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_tables7.jpg" class="gallery-img tables" alt="Table setup" onclick="openLightbox(this)">
+
+            <img src="gallery/ve_event1.png" class="gallery-img events" alt="Event setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_event2.jpg" class="gallery-img events" alt="Event setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_event3.png" class="gallery-img events" alt="Event setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_event4.png" class="gallery-img events" alt="Event setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_event5.jpg" class="gallery-img events" alt="Event setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_event6.jpg" class="gallery-img events" alt="Event setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_event7.jpg" class="gallery-img events" alt="Event setup" onclick="openLightbox(this)">
+            <img src="gallery/ve_event8.jpg" class="gallery-img events" alt="Event setup" onclick="openLightbox(this)">
+
+            <img src="gallery/ve_pinata1.png" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata2.png" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata3.png" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata4.png" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata5.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata6.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata7.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata8.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata9.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata10.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata11.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata12.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata13.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata14.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata15.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata16.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata17.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata18.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+            <img src="gallery/ve_pinata19.jpg" class="gallery-img pinatas" alt="Custom pi&ntilde;ata" onclick="openLightbox(this)">
+
+            <dialog id="lightbox">
+                <div class="lightbox-content">
+                    <img id="lightbox-img" alt="Enlarged image">
+                </div>
+                <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)" aria-label="Previous image">&#10094;</button>
+                <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)" aria-label="Next image">&#10095;</button>
+                <button class="close-btn" onclick="closeLightbox()">&#10005;</button>
+                <div class="lightbox-counter"><span id="lightbox-counter-current">1</span> / <span id="lightbox-counter-total">1</span></div>
+            </dialog>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p class="footer-brand">Villeda Events</p>
+        <p>&copy; 2024-2026 | Website by Jose Sanchez</p>
+    </footer>
+</body>
+</html>
