@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ".carousel-wrap",
         ".gallery-img:not(:nth-child(-n+6))",
         ".content-block:not(.pinata-intro)",
-        ".about-content > p",
         ".section-note",
         ".contact-section > p",
         ".contact-section > a",
